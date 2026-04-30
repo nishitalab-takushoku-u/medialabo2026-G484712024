@@ -1,3 +1,6 @@
-p {
-    color:green;
+title {
+    border: 3px solid blue;
+    background-color: #e0f0ff;
+    color: blue;
+    padding: 10px;
 }
