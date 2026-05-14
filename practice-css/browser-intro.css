@@ -22,11 +22,11 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
+  grid-auto-rows: 200px 200px;
 }
 
 #zentai > div {
   background-color: #ffefaf;
-  height: 200px;
   padding: 5px;
   position: relative;
 }
