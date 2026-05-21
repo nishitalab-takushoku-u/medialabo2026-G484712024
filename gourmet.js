@@ -2,6 +2,14 @@
 // 課題3-2 のプログラムはこの関数の中に記述すること
 function print(data) {
 
+console.log("店舗名:", data.name);
+console.log("ジャンル:", data.genre.name);
+console.log("住所:", data.address);
+console.log("キャッチコピー:", data.catch);
+console.log("最寄駅:", data.access);
+console.log("営業時間:", data.open);
+console.log("予算:", data.budget.name);
+
 }
 
 // 課題5-1 の関数 printDom() はここに記述すること
