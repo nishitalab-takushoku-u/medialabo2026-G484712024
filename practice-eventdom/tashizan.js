@@ -12,10 +12,5 @@ function keisan() {
 
 }
 
-
-
-
-
-
 let b = document.querySelector('button#calc');
  b.addEventListener('click', keisan);
