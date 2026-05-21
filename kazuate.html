@@ -5,14 +5,28 @@
   <head>
     <meta charset="utf-8">
     <title>数当てゲーム</title>
+
     <script src="kazuate.js" defer></script>
   </head>
 
-　　<body>
+  <body>
+
     <h1>数当てゲーム</h1>
+
     <p>
-        <span id="kaisu">1</span>回目の予想: 
-        <!-- ここにテキストボックスとボタンを設置 -->
+      1から10の間の整数:
+      <input type="text" name="yosou" id="yosou" size="5">
+
+      <button id="kai">回答</button>
     </p>
-    <p id="result">ここに判定結果を表示します</p>
+
+    <p>
+      <span id="kaisu">0</span>回目の予想:
+      <span id="answer"></span>
+    </p>
+
+    <p id="result">
+      ここに判定結果を表示します
+    </p>
+  </body>
 </html>
