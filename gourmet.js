@@ -18,6 +18,48 @@ for(let s of data.results.shop){
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
 
+  let old = document.querySelector('#result');
+  if (old !== null) {
+    old.remove();
+  }
+
+  let div = document.createElement('div');
+  div.setAttribute('id', 'result');
+
+  let body = document.querySelector('body');
+  body.insertAdjacentElement('beforeend', div);
+
+  for(let shop of data.results.shop){
+
+    let h2 = document.createElement('h2');
+    h2.textContent = shop.name;
+    div.insertAdjacentElement('beforeend', h2);
+
+    let p1 = document.createElement('p');
+    p1.textContent = "ジャンル: " + shop.genre.name;
+    div.insertAdjacentElement('beforeend', p1);
+
+    let p2 = document.createElement('p');
+    p2.textContent = "住所: " + shop.address;
+    div.insertAdjacentElement('beforeend', p2);
+
+    let p3 = document.createElement('p');
+    p3.textContent = "キャッチコピー: " + shop.catch;
+    div.insertAdjacentElement('beforeend', p3);
+
+    let p4 = document.createElement('p');
+    p4.textContent = "アクセス: " + shop.access;
+    div.insertAdjacentElement('beforeend', p4);
+
+    let p5 = document.createElement('p');
+    p5.textContent = "営業時間: " + shop.open;
+    div.insertAdjacentElement('beforeend', p5);
+
+    let p6 = document.createElement('p');
+    p6.textContent = "予算: " + shop.budget.name;
+    div.insertAdjacentElement('beforeend', p6);
+
+  }
 }
 
 // 課題6-1 のイベントハンドラ登録処理は以下に記述
