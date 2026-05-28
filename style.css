@@ -27,3 +27,8 @@ p {
 .blue {
     color: blue
 }
+
+.last {
+  color: red;
+  font-weight: bold;
+}
